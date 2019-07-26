@@ -10,11 +10,9 @@ namespace bibliothequeGestionPharmacie
     {
         public string Nom { get; set; }
         public decimal Prix { get; set; }
-        public DateTime Date_de_peremption { get; set; }
         public Classement_therapeutique Classe_Therapeutique { get; set; }
-        public static int Stock { get; private set; }
 
-        enum Classement_therapeutique
+        public enum Classement_therapeutique
         {
             Allergologie,
             Anesthesie_reanimation,
